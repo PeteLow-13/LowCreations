@@ -1,10 +1,8 @@
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
-import * as SiIcons from 'react-icons/si';
 import * as ImIcons from 'react-icons/im';
-import * as GiIcons from 'react-icons/gi';
+import * as GrIcons from 'react-icons/gr';
 import * as HiIcons from 'react-icons/hi';
 
 export const NavData = [
@@ -14,7 +12,6 @@ export const NavData = [
     icon: <AiIcons.AiFillHome />,
     cName: 'nav-text',
   },
-
   {
     title: 'About us',
     path: '/about',
@@ -31,6 +28,12 @@ export const NavData = [
     title: 'FAQ',
     path: '/faq',
     icon: <HiIcons.HiOutlineQuestionMarkCircle />,
+    cName: 'nav-text',
+  },
+  {
+    title: 'Our Work',
+    path: '/work',
+    icon: <GrIcons.GrGallery />,
     cName: 'nav-text',
   },
 ];
