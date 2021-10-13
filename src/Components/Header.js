@@ -2,60 +2,53 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 import { LinkContainer } from 'react-router-bootstrap';
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Container, NavDropdown, Button } from 'react-bootstrap';
 import SearchBox from './SearchBox';
 
 const Header = () => {
   return (
-    <header>
-      <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
-        <Container>
-          <LinkContainer to='/'>
-            <Navbar.Brand>Low Creations</Navbar.Brand>
-          </LinkContainer>
-          <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav'>
-            {/* <Route render={({ history }) => <SearchBox history={history} />} /> */}
-            <Nav className='ml-auto'>
-              {/* <LinkContainer to='/cart'>
-                <Nav.Link>
-                  <i className='fas fa-shopping-cart'></i>Cart
-                </Nav.Link>
-              </LinkContainer>
-              {userInfo ? (
-                <NavDropdown title={userInfo.name} id='userName'>
-                  <LinkContainer to='/profile'>
-                    <NavDropdown.Item>Profile</NavDropdown.Item>
-                  </LinkContainer>
-                  <NavDropdown.Item onClick={logoutHandler}>
-                    Logout
-                  </NavDropdown.Item>
-                </NavDropdown>
-              ) : (
-                <LinkContainer to='/login'>
-                  <Nav.Link>
-                    <i className='fas fa-user'></i>Sign In
-                  </Nav.Link>
-                </LinkContainer>
-              )}
-              {userInfo && userInfo.isAdmin && (
-                <NavDropdown title='Admin' id='adminmenus'>
-                  <LinkContainer to='/admin/userlist'>
-                    <NavDropdown.Item>Users</NavDropdown.Item>
-                  </LinkContainer>
-                  <LinkContainer to='/admin/productlist'>
-                    <NavDropdown.Item>Products</NavDropdown.Item>
-                  </LinkContainer>
-                  <LinkContainer to='/admin/orderlist'>
-                    <NavDropdown.Item>Orders</NavDropdown.Item>
-                  </LinkContainer>
-                </NavDropdown>
-              )} */}
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </header>
+    <Nav className='navbar navbar-expand-lg navbar-dark bg-primary'>
+      <div class='container-fluid'>
+        <a className='navbar-brand' href='#'>
+          Low Creations
+        </a>
+        {/* <Button
+          className='navbar-toggler'
+          type='button'
+          data-bs-toggle='collapse'
+          data-bs-target='#navbarColor01'
+          aria-controls='navbarColor01'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+        ></Button> */}
+        <span className='navbar-toggler-icon'></span>
+        <div className='collapse navbar-collapse' id='navbarColor01'>
+          <ul className='navbar-nav me-auto'>
+            <li className='nav-item'>
+              <a className='nav-link active' href='#'>
+                Home
+                <span className='visually-hidden'>(current)</span>
+              </a>
+            </li>
+            <li className='nav-item'>
+              <a className='nav-link' href='#'>
+                Features
+              </a>
+            </li>
+            <li className='nav-item'>
+              <a className='nav-link' href='#'>
+                Pricing
+              </a>
+            </li>
+            <li className='nav-item'>
+              <a className='nav-link' href='#'>
+                About
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </Nav>
   );
 };
 
