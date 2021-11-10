@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <NavBar />
+      {/* <NavBar /> */}
       <Container>
         <Route path='/' component={HomeScreen} exact />
         <Route path='/about' exact component={AboutScreen} />
