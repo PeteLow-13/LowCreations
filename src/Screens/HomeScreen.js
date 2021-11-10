@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Row, Image } from 'react-bootstrap';
-import Vaxed from '../Images/CovidVax.jpeg';
+import HomepageCarousel from '../Components/HomepageCarousel';
+
 const HomeScreen = () => {
   return (
     <div>
@@ -8,7 +9,7 @@ const HomeScreen = () => {
       <h2>Handyman and Repair Services</h2>
       <Row>
         <Col md={12}>
-          <Image src={Vaxed} alt='image of covid vaccine stickers' fluid />
+          <HomepageCarousel />
         </Col>
       </Row>
     </div>
