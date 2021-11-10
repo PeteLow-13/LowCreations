@@ -1,10 +1,15 @@
 import React from 'react';
+import BeforeAfterCarousel from '../Components/BeforeAfterCarousel';
 
+
+ 
 const WorkGalleryScreen = () => {
   return (
-    <div>
+    <>
       <h1>Work Gallery</h1>
-    </div>
+      <BeforeAfterCarousel />
+      
+    </>
   );
 };
 
