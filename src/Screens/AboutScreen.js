@@ -10,9 +10,11 @@ const AboutScreen = () => {
   <Card.Img variant="top" src={ Profile } />
   <Card.Body>
     <Card.Title>Pete</Card.Title>
-    <Card.Text>
+    <Card.Text>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi dolore facere natus possimus earum! Non, neque quaerat ex itaque illo, optio asperiores, ab eos corporis hic beatae ipsum? Excepturi, nemo.</Card.Text>
+    {/* 3 questions standardized for all employees */}
+    {/* <Card.Text>
     I founded LC Handywork during the pandemic of 2020-21 when it became necessary to strike out on my own to accomidate new schedules. I have a varied background and have done many types of jobs. My background is varried but I have extensive experience doing many different types of work. My Background is in the restaurant world and I have exensive knowleded of comercial kitchens and equipment. I also do web development.
-    </Card.Text>
+    </Card.Text> */}
   </Card.Body>
 </Card>
     </>
