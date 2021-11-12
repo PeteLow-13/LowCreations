@@ -11,9 +11,10 @@ import NavBar from './Components/NavBar';
 function App() {
   return (
     <Router>
-      <Header />
+      {/* <Header /> */}
       {/* <NavBar /> */}
       <Container>
+      <Header />
         <Route path='/' component={HomeScreen} exact />
         <Route path='/about' exact component={AboutScreen} />
         <Route path='/contact' exact component={ContactScreen} />
