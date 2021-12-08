@@ -1,8 +1,6 @@
 import React from 'react';
-import { Col, Row, Image, Card, Button } from 'react-bootstrap';
-import HomepageCarousel from '../Components/HomepageCarousel';
+import { Col, Row, Image, Card } from 'react-bootstrap';
 import lookout from '../Images/leschiLookout.jpeg'
-import sticker from '../Images/vaccineSticker.png'
 import fence from '../Images/nunnFence2.jpeg'
 import plumbing from '../Images/plumbingTools.jpeg'
 import electric from '../Images/electricalTools.jpeg'
