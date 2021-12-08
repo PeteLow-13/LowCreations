@@ -1,19 +1,19 @@
 import React from 'react'
-import { Carousel, Image, Card, Col } from 'react-bootstrap';
-
+import { Carousel, Image, Card } from 'react-bootstrap';
+import cabinBefore from '../Images/cabinDeckBefore.jpeg'
+import cabinAfter from '../Images/cabinDeckAfter.jpeg'
 
 
 const CabinDeckCarousel = () => {
     return (
         <>
-        <Col md={6}>
-          <Card style={{ width: 'auto' }} className='rounded'>
+          <Card style={{ width: 'auto' }} className='rounded text-center'>
             <Carousel fade>
           <Carousel.Item>
             <Image
               className="d-block w-100"
-              src={}
-              alt="Picture of janky handrail"
+              src={ cabinBefore }
+              alt="deck before paint"
             />
             <Carousel.Caption>
               <h3>Before</h3>
@@ -22,8 +22,8 @@ const CabinDeckCarousel = () => {
           <Carousel.Item>
             <Image
               className="d-block w-100"
-              src={}
-              alt="Picture of new handrail"
+              src={ cabinAfter }
+              alt="Deck after paint"
             />
   
             <Carousel.Caption className='text-color-white'>
@@ -35,11 +35,11 @@ const CabinDeckCarousel = () => {
             <Card.Body>
               <Card.Title>Deck refresh</Card.Title>
               <Card.Text>
-               Freshened up paint on 
+               Freshened up the paint on cabin deck.
               </Card.Text>
             </Card.Body>
             </Card>
-          </Col>
+          
       </>
     )
 }
