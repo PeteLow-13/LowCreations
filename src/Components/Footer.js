@@ -8,7 +8,7 @@ const Footer = () => {
     <>
       <footer className='mainfooter' role='contentinfo'>
         {/* <div class="footer-middle"> */}
-        <div class='container'>
+        <div className='container'>
           <Row>
             <Col className='col-md-3 col-sm-6'>
               {/* <!--Column1--> */}
@@ -21,21 +21,21 @@ const Footer = () => {
             </Col>
             <Col className='col-md-3 col-sm-6'>
               {/* <!--Column1--> */}
-              <a href='/contact'>contact us</a>
+              <a href='/contact'>contact</a>
             </Col>
-            <Col class='col-md-3 col-sm-6'>
+            <Col className='col-md-3 col-sm-6'>
               {/* <!--Column1--> */}
 
               <h4>follow us</h4>
-              <ul class='social-network social-circle'>
+              <ul className='social-network social-circle'>
                 <li>
-                  <a href='#' class='icoFacebook' title='Facebook'>
-                    <i class='fa fa-facebook'></i>
+                  <a href='#' className='icoFacebook' title='Facebook'>
+                    <i className='fa fa-facebook'></i>
                   </a>
                 </li>
                 <li>
-                  <a href='#' class='icoLinkedin' title='Linkedin'>
-                    <i class='fa fa-linkedin'></i>
+                  <a href='#' className='icoLinkedin' title='Linkedin'>
+                    <i className='fa fa-linkedin'></i>
                   </a>
                 </li>
               </ul>
