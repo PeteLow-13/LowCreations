@@ -1,13 +1,12 @@
 import React from 'react'
-import { Carousel, Image, Card, Col } from 'react-bootstrap';
+import { Carousel, Image, Card } from 'react-bootstrap';
 import coleBefore from '../Images/coleStepsBefore.jpeg'
 import coleAfter from '../Images/coleStepsAfter.jpeg'
 
 const ColeCarousel = () => {
     return (
       <>
-      <Col md={6}>
-        <Card style={{ width: 'auto' }} className='rounded'>
+        <Card style={{ width: 'auto' }} className='rounded text-center'>
           <Carousel fade>
         <Carousel.Item>
           <Image
@@ -35,11 +34,10 @@ const ColeCarousel = () => {
           <Card.Body>
             <Card.Title>Deck refresh</Card.Title>
             <Card.Text>
-             New paint and handrail bringing it up to code.
+             New paint and handrail bringing steps up to code.
             </Card.Text>
           </Card.Body>
           </Card>
-        </Col>
     </>
     )
 }
