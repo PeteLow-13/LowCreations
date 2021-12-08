@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel, Image } from 'react-bootstrap';
+import { Carousel, Image, Card, Col } from 'react-bootstrap';
 import coleBefore from '../Images/coleStepsBefore.jpeg'
 import coleAfter from '../Images/coleStepsAfter.jpeg'
 
@@ -7,7 +7,9 @@ import coleAfter from '../Images/coleStepsAfter.jpeg'
 const BeforeAfterCarousel = () => {
   return (
     <>
-      <Carousel fade>
+      <Col md={6}>
+        <Card style={{ width: 'auto' }} className='rounded'>
+          <Carousel fade>
         <Carousel.Item>
           <Image
             className="d-block w-100"
@@ -31,6 +33,14 @@ const BeforeAfterCarousel = () => {
         </Carousel.Item>
         
       </Carousel>
+          <Card.Body>
+            <Card.Title>Deck refresh</Card.Title>
+            <Card.Text>
+             New paint and handrail bringing it up to code.
+            </Card.Text>
+          </Card.Body>
+          </Card>
+        </Col>
     </>
   );
 };
