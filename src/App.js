@@ -6,13 +6,12 @@ import ContactScreen from './Screens/ContactScreen';
 import HomeScreen from './Screens/HomeScreen';
 import WorkGalleryScreen from './Screens/WorkGalleryScreen';
 import Header from './Components/Header';
-import NavBar from './Components/NavBar';
+import Footer from './Components/Footer'
 
 function App() {
   return (
     <Router>
       {/* <Header /> */}
-      {/* <NavBar /> */}
       <Container>
       <Header />
         <Route path='/' component={HomeScreen} exact />
@@ -21,6 +20,7 @@ function App() {
         <Route path='/faq' exact component={FAQScreen} />
         <Route path='/work' exact component={WorkGalleryScreen} />
       </Container>
+      <Footer />
     </Router>
   );
 }
