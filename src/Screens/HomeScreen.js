@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row, Image, Card } from 'react-bootstrap';
 import lookout from '../Images/leschiLookout.jpeg'
-import fence from '../Images/nunnFence2.jpeg'
+import fence from '../Images/clearCedarFence2.jpeg'
 import plumbing from '../Images/plumbingTools.jpeg'
 import electric from '../Images/electricalTools.jpeg'
 import cabin from '../Images/cabinDeckAfter.jpeg'
@@ -12,7 +12,7 @@ const HomeScreen = () => {
     <>
       <Row>
         <Col md={12}>
-          <Image src={lookout} alt='seattle' fluid/>
+          <Image src={lookout} alt='seattle' style={{ width: 'auto' }} fluid/>
         </Col>
       </Row>
       <h1>Low Creations</h1>
