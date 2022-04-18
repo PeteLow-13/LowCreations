@@ -6,14 +6,14 @@ import ContactScreen from './Screens/ContactScreen';
 import HomeScreen from './Screens/HomeScreen';
 import WorkGalleryScreen from './Screens/WorkGalleryScreen';
 import Header from './Components/Header';
-import Footer from './Components/Footer'
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <Router>
       {/* <Header /> */}
       <Container>
-      <Header />
+        <Header />
         <Route path='/' component={HomeScreen} exact />
         <Route path='/about' exact component={AboutScreen} />
         <Route path='/contact' exact component={ContactScreen} />
