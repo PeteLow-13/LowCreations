@@ -1,6 +1,9 @@
 import React from 'react';
 import { Col, Row, Image, Card, Container } from 'react-bootstrap';
 import lookout from '../Images/leschiLookout.jpeg';
+import lookout3 from '../Images/leschiLookout3.jpeg';
+import lookoutBanner from '../Images/leschiLookoutBanner.jpeg';
+import cabinAfter from '../Images/cabinDeckAfter2.jpeg';
 import fence from '../Images/clearCedarFence2.jpeg';
 import plumbing from '../Images/plumbingTools.jpeg';
 import electric from '../Images/electricalTools.jpeg';
@@ -12,13 +15,13 @@ const HomeScreen = () => {
     <Container fluid>
       <Row>
         <Card className='bg-dark text-white'>
-          <Card.Img src={lookout} alt='seattle' />
+          <Card.Img src={lookout3} alt='seattle' />
           <Card.ImgOverlay>
             <Card.Title>
               <h1>Low Creations</h1>
             </Card.Title>
             <Card.Text>
-              <h2>Handyman and Repair Services</h2>
+              <h2>Handyman and Repair Service</h2>
             </Card.Text>
             <Card.Text>
               <h3>Seattle, WA</h3>
@@ -26,6 +29,27 @@ const HomeScreen = () => {
           </Card.ImgOverlay>
         </Card>
       </Row>
+      {/* <Row>
+        <Col>
+          <Card
+            style={{ width: 'auto' }}
+            className='rounded bg-dark text-black'
+          >
+            <Card.Img src={lookoutBanner} alt='seattle' />
+            <Card.ImgOverlay>
+              <Card.Title>
+                <h1>Low Creations</h1>
+              </Card.Title>
+              <Card.Text>
+                <h2>Handyman and Repair Services</h2>
+              </Card.Text>
+              <Card.Text>
+                <h3>Seattle, WA</h3>
+              </Card.Text>
+            </Card.ImgOverlay>
+          </Card>
+        </Col>
+      </Row> */}
       <br />
       <Row>
         <Col md={6}>
@@ -65,7 +89,7 @@ const HomeScreen = () => {
         </Col>
         <Col md={6}>
           <Card style={{ width: 'auto' }} className='rounded'>
-            <Card.Img variant='top' src={cabin} className='fluid' />
+            <Card.Img variant='top' src={cabinAfter} className='fluid' />
             <Card.Body>
               <Card.Title className='text-center'>
                 Painting and staining
@@ -80,7 +104,8 @@ const HomeScreen = () => {
       </Row>
       <br />
       <Row>
-        <Col md={12}>
+        <Col md={3}></Col>
+        <Col md={6}>
           <Card style={{ width: 'auto' }} className='rounded'>
             <Card.Header>
               <h1>Contact Us</h1>
@@ -99,9 +124,11 @@ const HomeScreen = () => {
             </Card.Body>
           </Card>
         </Col>
+        <Col md={3}></Col>
       </Row>
       <br />
       <Row>
+        <Col md={3}></Col>
         <Col md={6}>
           <Card style={{ width: 'auto' }} className='rounded'>
             <Card.Body>
@@ -114,6 +141,7 @@ const HomeScreen = () => {
             </Card.Body>
           </Card>
         </Col>
+        <Col md={3}></Col>
       </Row>
     </Container>
   );
