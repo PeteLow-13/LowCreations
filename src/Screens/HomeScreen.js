@@ -52,7 +52,8 @@ const HomeScreen = () => {
       </Row> */}
       <br />
       <Row>
-        <Col md={6}>
+        <Col md={2}></Col>
+        <Col md={8}>
           <Card style={{ width: 'auto' }} className='rounded'>
             <Card.Img variant='top' src={plumbing} />
             <Card.Body>
@@ -64,7 +65,27 @@ const HomeScreen = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={6}>
+        <Col md={2}></Col>
+      </Row>
+      <br />
+      <br />
+      <Row>
+        <Col md={2}></Col>
+        <Col md={8}>
+          <Card style={{ width: 'auto' }} className='rounded'>
+            <Card.Img variant='top' src={fence} />
+            <Card.Body>
+              <Card.Title className='text-center'>Custom Fences</Card.Title>
+              <Card.Text></Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={2}></Col>
+      </Row>
+      <br />
+      <Row>
+        <Col md={2}></Col>
+        <Col md={8}>
           <Card style={{ width: 'auto' }} className='rounded'>
             <Card.Img variant='top' src={electric} />
             <Card.Body>
@@ -75,19 +96,12 @@ const HomeScreen = () => {
             </Card.Body>
           </Card>
         </Col>
+        <Col md={2}></Col>
       </Row>
       <br />
       <Row>
-        <Col md={6}>
-          <Card style={{ width: 'auto' }} className='rounded'>
-            <Card.Img variant='top' src={fence} />
-            <Card.Body>
-              <Card.Title className='text-center'>Custom Fences</Card.Title>
-              <Card.Text></Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={6}>
+        <Col md={2}></Col>
+        <Col md={8}>
           <Card style={{ width: 'auto' }} className='rounded'>
             <Card.Img variant='top' src={cabinAfter} className='fluid' />
             <Card.Body>
@@ -101,6 +115,7 @@ const HomeScreen = () => {
             </Card.Body>
           </Card>
         </Col>
+        <Col md={2}></Col>
       </Row>
       <br />
       <Row>
@@ -111,6 +126,10 @@ const HomeScreen = () => {
               <h1>Contact Us</h1>
             </Card.Header>
             <Card.Body>
+              <h3>
+                We handle all sorts of jobs, get in touch and let us know what
+                you've got in mind.
+              </h3>
               <h3>Email:</h3>
               <h3>
                 <a href='mailto:lowcreationswa@gmail.com'>
@@ -133,10 +152,7 @@ const HomeScreen = () => {
           <Card style={{ width: 'auto' }} className='rounded'>
             <Card.Body>
               <Card.Title className='text-center'>Covid Safe</Card.Title>
-              <Card.Text>
-                We take safety very seriously. All of our employees are
-                vaccinated.
-              </Card.Text>
+              <Card.Text>We take safety very seriously.</Card.Text>
               <Card.Img variant='bottom rounded' src={safe} className='fluid' />
             </Card.Body>
           </Card>
