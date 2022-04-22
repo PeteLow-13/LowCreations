@@ -1,7 +1,5 @@
 import React from 'react';
 import { Carousel, Image, Card } from 'react-bootstrap';
-import cabinBefore from '../Images/cabinDeckBefore.jpeg';
-import cabinAfter from '../Images/cabinDeckAfter.jpeg';
 import cabinBefore2 from '../Images/cabinDeckBefore2.jpeg';
 import cabinAfter2 from '../Images/cabinDeckAfter2.jpeg';
 

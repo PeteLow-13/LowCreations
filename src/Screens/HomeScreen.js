@@ -1,13 +1,10 @@
 import React from 'react';
-import { Col, Row, Image, Card, Container } from 'react-bootstrap';
-import lookout from '../Images/leschiLookout.jpeg';
+import { Col, Row, Card, Container } from 'react-bootstrap';
 import lookout3 from '../Images/leschiLookout3.jpeg';
-import lookoutBanner from '../Images/leschiLookoutBanner.jpeg';
 import cabinAfter from '../Images/cabinDeckAfter2.jpeg';
 import fence from '../Images/clearCedarFence2.jpeg';
 import plumbing from '../Images/plumbingTools.jpeg';
 import electric from '../Images/electricalTools.jpeg';
-import cabin from '../Images/cabinDeckAfter.jpeg';
 import safe from '../Images/covidSafe.jpeg';
 
 const HomeScreen = () => {
@@ -29,6 +26,35 @@ const HomeScreen = () => {
           </Card.ImgOverlay>
         </Card>
       </Row>
+      <br />
+      <Row>
+        <Col md={2}></Col>
+        <Col md={8}>
+          <Card style={{ width: 'auto' }} className='rounded'>
+            <Card.Header>
+              <h1>Contact Us</h1>
+            </Card.Header>
+            <Card.Body>
+              <h3>
+                We handle all sorts of jobs, get in touch and let us know what
+                you've got in mind.
+              </h3>
+              <h3>Email:</h3>
+              <h3>
+                <a href='mailto:lowcreationswa@gmail.com'>
+                  lowcreationswa@gmail.com
+                </a>
+              </h3>
+              <h3>Phone:</h3>
+              <h3>
+                <a href='tel:206-617-8254'>206-617-8254</a>{' '}
+              </h3>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={2}></Col>
+      </Row>
+      <br />
       {/* <Row>
         <Col>
           <Card
@@ -51,24 +77,7 @@ const HomeScreen = () => {
         </Col>
       </Row> */}
       <br />
-      <Row>
-        <Col md={2}></Col>
-        <Col md={8}>
-          <Card style={{ width: 'auto' }} className='rounded'>
-            <Card.Img variant='top' src={plumbing} />
-            <Card.Body>
-              <Card.Title className='text-center'>Plumbing</Card.Title>
-              <Card.Text>
-                Got a job that's too much for you and not enough for a plumber?
-                Talk to us about it.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={2}></Col>
-      </Row>
-      <br />
-      <br />
+      
       <Row>
         <Col md={2}></Col>
         <Col md={8}>
@@ -77,22 +86,6 @@ const HomeScreen = () => {
             <Card.Body>
               <Card.Title className='text-center'>Custom Fences</Card.Title>
               <Card.Text></Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={2}></Col>
-      </Row>
-      <br />
-      <Row>
-        <Col md={2}></Col>
-        <Col md={8}>
-          <Card style={{ width: 'auto' }} className='rounded'>
-            <Card.Img variant='top' src={electric} />
-            <Card.Body>
-              <Card.Title className='text-center'>Electrical</Card.Title>
-              <Card.Text>
-                Outdated light fixtures or outlets you'd like to update?
-              </Card.Text>
             </Card.Body>
           </Card>
         </Col>
@@ -119,33 +112,40 @@ const HomeScreen = () => {
       </Row>
       <br />
       <Row>
-        <Col md={3}></Col>
-        <Col md={6}>
+        <Col md={2}></Col>
+        <Col md={8}>
           <Card style={{ width: 'auto' }} className='rounded'>
-            <Card.Header>
-              <h1>Contact Us</h1>
-            </Card.Header>
+            <Card.Img variant='top' src={electric} />
             <Card.Body>
-              <h3>
-                We handle all sorts of jobs, get in touch and let us know what
-                you've got in mind.
-              </h3>
-              <h3>Email:</h3>
-              <h3>
-                <a href='mailto:lowcreationswa@gmail.com'>
-                  lowcreationswa@gmail.com
-                </a>
-              </h3>
-              <h3>Phone:</h3>
-              <h3>
-                <a href='tel:206-617-8254'>206-617-8254</a>{' '}
-              </h3>
+              <Card.Title className='text-center'>Electrical</Card.Title>
+              <Card.Text>
+                Outdated light fixtures or outlets you'd like to update?
+              </Card.Text>
             </Card.Body>
           </Card>
         </Col>
-        <Col md={3}></Col>
+        <Col md={2}></Col>
       </Row>
       <br />
+      
+      <Row>
+        <Col md={2}></Col>
+        <Col md={8}>
+          <Card style={{ width: 'auto' }} className='rounded'>
+            <Card.Img variant='top' src={plumbing} />
+            <Card.Body>
+              <Card.Title className='text-center'>Plumbing</Card.Title>
+              <Card.Text>
+                Got a job that's too much for you and not enough for a plumber?
+                Talk to us about it.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={2}></Col>
+      </Row>
+      <br />
+      
       <Row>
         <Col md={3}></Col>
         <Col md={6}>
