@@ -35,7 +35,7 @@ const ContactScreen = () => {
             </Card.Footer>
           </Card>
         </Col>
-        <Col md={6}>
+        <Col sm={12} md={12} lg={6} xl={6}>
           <Card className='text-center rounded'>
             <Card.Header>
               <h2>Phone</h2>
